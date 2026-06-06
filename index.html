@@ -21,6 +21,7 @@
             <nav>
                 <ul id="navLinks">
                     <li><a href="#manifesto">Манифест</a></li>
+                    <li><a href="#pricing">Услуги</a></li>
                     <li><a href="#projects">Мои сайты</a></li>
                     <li><a href="#contact">Связаться</a></li>
                 </ul>
@@ -41,17 +42,18 @@
                     </div>
                     <h1 class="hero-title">Привет! Я <span>вайб-кодер</span>.</h1>
                     <p class="hero-desc">
-                        Я собираю сайты, пишу чистый CSS и JS. Не люблю душные корпоративные ТЗ и обман. Пишу код, который работает стабильно, выглядит стильно и создается с хорошим настроением.
+                        Я собираю премиальные сайты, пишу чистый CSS и JS. Не люблю душные корпоративные ТЗ и обман. Создаю продукт, который работает стабильно, выглядит дорого и создается с хорошим настроением.
                     </p>
                     <div class="hero-btns">
-                        <a href="#projects" class="btn btn-primary">Посмотреть проекты</a>
-                        <a href="#manifesto" class="btn btn-secondary">Мой манифест</a>
+                        <a href="#pricing" class="btn btn-primary">Мои услуги</a>
+                        <a href="#projects" class="btn btn-secondary">Смотреть работы</a>
                     </div>
                 </div>
                 <div class="hero-right reveal" style="transition-delay: 0.2s;">
-                    <div class="vibe-graphic">
-                        <div class="glow-circle"></div>
-                        <div class="inner-circle glass-card">
+                    <div class="hero-image-wrapper glass-card hover-lift">
+                        <div class="hero-image-overlay"></div>
+                        <img src="https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&w=800&q=80" alt="Рабочее место кодера" class="hero-img">
+                        <div class="hero-image-badge">
                             <span class="avatar-icon">💻</span>
                             <span class="avatar-status">status: chill_coding</span>
                         </div>
@@ -107,6 +109,71 @@
         </div>
     </section>
 
+    <!-- ===== PRICING ===== -->
+    <section id="pricing">
+        <div class="container">
+            <div class="section-head reveal">
+                <h2>Сколько стоит <span>Сайт</span>?</h2>
+                <p>Прозрачные цены без скрытых платежей. Я ценю твое и своё время.</p>
+            </div>
+            <div class="pricing-grid">
+                
+                <!-- Plan 1 -->
+                <div class="price-card glass-card reveal hover-lift">
+                    <div class="price-header">
+                        <h3 class="price-name">Лендинг</h3>
+                        <div class="price-amount">15 000 <span>₽</span></div>
+                        <p class="price-desc">Идеально для портфолио, промо-акции или визитки.</p>
+                    </div>
+                    <ul class="price-features">
+                        <li><span>✓</span> Уникальный дизайн (без шаблонов)</li>
+                        <li><span>✓</span> До 5 смысловых блоков</li>
+                        <li><span>✓</span> Адаптация под смартфоны</li>
+                        <li><span>✓</span> Базовые анимации</li>
+                        <li><span>✓</span> Запуск на GitHub Pages / Хостинге</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary price-btn">Выбрать тариф</a>
+                </div>
+
+                <!-- Plan 2 -->
+                <div class="price-card glass-card popular reveal hover-lift" style="transition-delay: 0.1s;">
+                    <div class="popular-badge">Рекомендую</div>
+                    <div class="price-header">
+                        <h3 class="price-name">Бизнес-сайт</h3>
+                        <div class="price-amount">30 000 <span>₽</span></div>
+                        <p class="price-desc">Для полноценного бизнеса, барбершопа, кофейни.</p>
+                    </div>
+                    <ul class="price-features">
+                        <li><span>✓</span> Премиальный дизайн и Glassmorphism</li>
+                        <li><span>✓</span> Многостраничная структура (до 5 страниц)</li>
+                        <li><span>✓</span> Сложные Scroll-анимации</li>
+                        <li><span>✓</span> Подключение форм и карт</li>
+                        <li><span>✓</span> Высокая скорость загрузки</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary price-btn">Заказать проект</a>
+                </div>
+
+                <!-- Plan 3 -->
+                <div class="price-card glass-card reveal hover-lift" style="transition-delay: 0.2s;">
+                    <div class="price-header">
+                        <h3 class="price-name">Уникальный Vibe</h3>
+                        <div class="price-amount">от 50 000 <span>₽</span></div>
+                        <p class="price-desc">Интернет-магазины, порталы и спецпроекты.</p>
+                    </div>
+                    <ul class="price-features">
+                        <li><span>✓</span> Полный цикл разработки</li>
+                        <li><span>✓</span> Сложная JS-логика и API</li>
+                        <li><span>✓</span> 3D эффекты и WebGL (опционально)</li>
+                        <li><span>✓</span> Интеграция баз данных</li>
+                        <li><span>✓</span> Индивидуальная поддержка</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary price-btn">Обсудить детали</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- ===== PROJECTS ===== -->
     <section id="projects">
         <div class="container">
@@ -117,17 +184,11 @@
             <div class="projects-grid">
                 
                 <!-- Project 1: Noir Blade Barbershop -->
-                <div class="project-card glass-card reveal">
-                    <div class="project-preview noir-preview">
-                        <div class="mockup-header">
-                            <span class="mockup-dot"></span>
-                            <span class="mockup-dot"></span>
-                            <span class="mockup-dot"></span>
-                        </div>
-                        <div class="mockup-body">
-                            <div class="mockup-logo">NOIR BLADE</div>
-                            <div class="mockup-line" style="width: 50%;"></div>
-                            <div class="mockup-line" style="width: 30%; margin-top: 4px;"></div>
+                <div class="project-card glass-card reveal hover-lift">
+                    <div class="project-preview-img">
+                        <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=80" alt="Барбершоп">
+                        <div class="preview-overlay">
+                            <a href="https://zlr5486-hash.github.io/portfolio_zlr/" target="_blank" class="overlay-btn">Смотреть live</a>
                         </div>
                     </div>
                     <div class="project-info">
@@ -141,24 +202,18 @@
                             Премиальный тёмный лендинг для барбершопа с золотыми акцентами, интерактивным слайдером отзывов, параллакс-эффектом и плавной скролл-анимацией.
                         </p>
                         <div class="project-links">
-                            <a href="https://zlr5486-hash.github.io/portfolio_zlr/" target="_blank" class="project-link live">Смотреть сайт →</a>
+                            <a href="https://zlr5486-hash.github.io/portfolio_zlr/" target="_blank" class="project-link live">Перейти →</a>
                             <a href="https://github.com/zlr5486-hash/portfolio_zlr" target="_blank" class="project-link code">GitHub</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 2: Oak & Bean Coffee Shop -->
-                <div class="project-card glass-card reveal" style="transition-delay: 0.15s;">
-                    <div class="project-preview oak-preview">
-                        <div class="mockup-header">
-                            <span class="mockup-dot"></span>
-                            <span class="mockup-dot"></span>
-                            <span class="mockup-dot"></span>
-                        </div>
-                        <div class="mockup-body" style="background: rgba(253, 251, 247, 0.95); border-color: rgba(198, 122, 88, 0.3);">
-                            <div class="mockup-logo" style="color: #3a4731;">OAK & BEAN</div>
-                            <div class="mockup-line" style="width: 50%; background: #c67a58;"></div>
-                            <div class="mockup-line" style="width: 30%; margin-top: 4px; background: #c67a58;"></div>
+                <div class="project-card glass-card reveal hover-lift" style="transition-delay: 0.15s;">
+                    <div class="project-preview-img">
+                        <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=800&q=80" alt="Кофейня">
+                        <div class="preview-overlay">
+                            <a href="https://zlr5486-hash.github.io/caffe_portfolio/" target="_blank" class="overlay-btn">Смотреть live</a>
                         </div>
                     </div>
                     <div class="project-info">
@@ -172,7 +227,7 @@
                             Крафтовый лендинг кофейни. Тёплая оливково-терракотовая палитра, мозаичная галерея, анимации появления элементов и параллакс-фон. Акцент на уют.
                         </p>
                         <div class="project-links">
-                            <a href="https://zlr5486-hash.github.io/caffe_portfolio/" target="_blank" class="project-link live">Смотреть сайт →</a>
+                            <a href="https://zlr5486-hash.github.io/caffe_portfolio/" target="_blank" class="project-link live">Перейти →</a>
                             <a href="https://github.com/zlr5486-hash/caffe_portfolio" target="_blank" class="project-link code">GitHub</a>
                         </div>
                     </div>
